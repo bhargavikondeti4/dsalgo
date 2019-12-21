@@ -26,6 +26,14 @@ public class LinkedList {
     private Node head;
     private int size;
 
+    public Node getHead() {
+        return head;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
     public void add1(int data){
         addRec(this.head,data);
     }
