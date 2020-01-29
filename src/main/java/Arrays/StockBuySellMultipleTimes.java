@@ -18,7 +18,6 @@ public class StockBuySellMultipleTimes {
         int sell=0;
         StringBuilder sb = new StringBuilder();
         for(int i=1;i<a.length;i++){
-
             if(a[i] > a[i-1]){
                 sell = i;
             }else{
@@ -29,8 +28,6 @@ public class StockBuySellMultipleTimes {
         }
         if(buy != sell) {
             sb.append("(").append(buy).append(" ").append(sell).append(")");
-
-
 
         }
         if(sb.toString().length() ==0 && buy==sell){
